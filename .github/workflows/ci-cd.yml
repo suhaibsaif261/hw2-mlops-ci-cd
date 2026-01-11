@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    name: CI (unit tests & lint)
+    name: CI 
     runs-on: ubuntu-latest
 
     defaults:
@@ -35,7 +35,7 @@ jobs:
         run: pylint src || true
 
   cd:
-    name: CD (build, deploy & smoke test)
+    name: CD (include smoke test)
     runs-on: ubuntu-latest
     needs: ci
     if: github.ref == 'refs/heads/main'
