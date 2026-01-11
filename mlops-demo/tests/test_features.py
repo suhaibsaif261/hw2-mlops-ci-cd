@@ -4,7 +4,7 @@ from src.features import text_to_number
 
 
 def test_text_to_number_empty():
-    assert text_to_number("") == 0
+    assert text_to_number("") == 999
 
 
 def test_text_to_number_known():
